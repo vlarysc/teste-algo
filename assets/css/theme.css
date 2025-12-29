@@ -9,6 +9,78 @@
   --font-data: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-size: 16px;
 
+  /* ============== THEME COLORS (Simplified) ============== */
+  --header-color: #3D1B6F;
+  --primary-color: #3D1B6F;
+  --primary-color-darken: #2f1556;
+  --primary-color-lighten: #4b2188;
+  --primary-color-lighten-2: #5827a0;
+  --secondary-color: #f0ebeb;
+  --primary-fg-color: #ffffff;
+  --primary-bg-color: rgba(127, 9, 182, 0.1);
+  --header-fg-color: #ffffff;
+  --header-alert-color: #FF3C78;
+
+  /* Primary scale */
+  --theme-primary-50: #c3a9ea;
+  --theme-primary-contrast-50: rgba(0, 0, 0, 0.87);
+  --theme-primary-100: #996cdb;
+  --theme-primary-contrast-100: rgba(0, 0, 0, 0.87);
+  --theme-primary-200: #793ed0;
+  --theme-primary-contrast-200: white;
+  --theme-primary-300: #5827a0;
+  --theme-primary-contrast-300: white;
+  --theme-primary-400: #4b2188;
+  --theme-primary-contrast-400: white;
+  --theme-primary-500: #3d1b6f;
+  --theme-primary-contrast-500: white;
+  --theme-primary-600: #2f1556;
+  --theme-primary-contrast-600: white;
+  --theme-primary-700: #220f3e;
+  --theme-primary-contrast-700: white;
+  --theme-primary-800: #140925;
+  --theme-primary-contrast-800: white;
+  --theme-primary-900: #07030d;
+  --theme-primary-contrast-900: white;
+  --theme-primary-A100: #ba8ffa;
+  --theme-primary-contrast-A100: rgba(0, 0, 0, 0.87);
+  --theme-primary-A200: #7f2ef5;
+  --theme-primary-contrast-A200: white;
+  --theme-primary-A400: #5117a6;
+  --theme-primary-contrast-A400: white;
+  --theme-primary-A700: #471c88;
+  --theme-primary-contrast-A700: white;
+
+  /* Accent scale */
+  --theme-accent-50: #ffffff;
+  --theme-accent-contrast-50: rgba(0, 0, 0, 0.87);
+  --theme-accent-100: #ffffff;
+  --theme-accent-contrast-100: rgba(0, 0, 0, 0.87);
+  --theme-accent-200: #ffffff;
+  --theme-accent-contrast-200: rgba(0, 0, 0, 0.87);
+  --theme-accent-300: #ffffff;
+  --theme-accent-contrast-300: rgba(0, 0, 0, 0.87);
+  --theme-accent-400: #fdfcfc;
+  --theme-accent-contrast-400: rgba(0, 0, 0, 0.87);
+  --theme-accent-500: #f0ebeb;
+  --theme-accent-contrast-500: rgba(0, 0, 0, 0.87);
+  --theme-accent-600: #e3d9d9;
+  --theme-accent-contrast-600: rgba(0, 0, 0, 0.87);
+  --theme-accent-700: #d6c8c8;
+  --theme-accent-contrast-700: rgba(0, 0, 0, 0.87);
+  --theme-accent-800: #c9b7b7;
+  --theme-accent-contrast-800: rgba(0, 0, 0, 0.87);
+  --theme-accent-900: #bca5a5;
+  --theme-accent-contrast-900: rgba(0, 0, 0, 0.87);
+  --theme-accent-A100: #ffffff;
+  --theme-accent-contrast-A100: rgba(0, 0, 0, 0.87);
+  --theme-accent-A200: #ffffff;
+  --theme-accent-contrast-A200: rgba(0, 0, 0, 0.87);
+  --theme-accent-A400: #ffffff;
+  --theme-accent-contrast-A400: rgba(0, 0, 0, 0.87);
+  --theme-accent-A700: #fbf9f9;
+  --theme-accent-contrast-A700: rgba(0, 0, 0, 0.87);
+
   /* ============== PRIMARY COLOR SCALE ============== */
   /* Base spotted in produção: #9400d3 (Purple) */
   --primary-50: #fdf7ff;
@@ -97,8 +169,8 @@
   --card-foreground: var(--neutral-900);
   --popover: #ffffff;
   --popover-foreground: var(--neutral-900);
-  --primary: var(--primary-600);
-  --primary-foreground: #ffffff;
+  --primary: var(--primary-color);
+  --primary-foreground: var(--primary-fg-color);
   --secondary: var(--neutral-100);
   --secondary-foreground: var(--neutral-900);
   --muted: var(--neutral-100);
@@ -111,7 +183,7 @@
   --input: var(--neutral-200);
   --input-background: var(--neutral-50);
   --switch-background: var(--neutral-300);
-  --ring: var(--primary-600);
+  --ring: var(--primary-color);
 
   /* ============== SHADOWS ============== */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -365,7 +437,7 @@ button, .button {
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-700);
+  background-color: var(--primary-color-darken);
 }
 
 .btn-secondary {
@@ -426,7 +498,7 @@ input, select, textarea {
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(112, 10, 255, 0.1);
+  box-shadow: 0 0 0 3px var(--primary-bg-color);
 }
 
 textarea {
