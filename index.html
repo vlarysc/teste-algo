@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design System - Plataforma Omnichannel CRM</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/atoms.css" />
+  <link rel="stylesheet" href="assets/css/molecules.css" />
+  <link rel="stylesheet" href="assets/css/organisms.css" />
+  <link rel="stylesheet" href="assets/css/showcase.css" />
+</head>
+<body>
+  <div class="design-system-wrapper">
+    <!-- Navigation -->
+    <nav class="showcase-nav">
+      <div class="showcase-nav-container">
+        <div class="showcase-nav-logo">
+          <h1>Design System</h1>
+          <p>Plataforma Omnichannel CRM</p>
+        </div>
+        <ul class="showcase-nav-menu">
+          <li><a href="#tokens">Tokens</a></li>
+          <li><a href="#atoms">Átomos</a></li>
+          <li><a href="#molecules">Moléculas</a></li>
+          <li><a href="#organisms">Organismos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="showcase-main">
+      <div class="container">
+        
+        <!-- ===== TOKENS SECTION ===== -->
+        <section id="tokens" class="showcase-section">
+          <h2>🎨 Tokens de Design</h2>
+          
+          <!-- Colors -->
+          <div class="showcase-subsection">
+            <h3>Paleta de Cores</h3>
+            
+            <div class="colors-grid">
+              <!-- Primary -->
+              <div class="color-group">
+                <h4>Primária (#700AFF)</h4>
+                <div class="color-scales">
+                  <div class="color-swatch" style="background-color: var(--primary-50); border: 1px solid var(--border);"><span>50</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-100);"><span>100</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-200);"><span>200</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-300);"><span>300</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-400);"><span>400</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-500);"><span>500</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-600);"><span>600</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-700); color: white;"><span>700</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-800); color: white;"><span>800</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-900); color: white;"><span>900</span></div>
+                  <div class="color-swatch" style="background-color: var(--primary-950); color: white;"><span>950</span></div>
+                </div>
+              </div>
+
+              <!-- Neutral -->
+              <div class="color-group">
+                <h4>Neutra (Slate)</h4>
+                <div class="color-scales">
+                  <div class="color-swatch" style="background-color: var(--neutral-50); border: 1px solid var(--border);"><span>50</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-100);"><span>100</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-200);"><span>200</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-300);"><span>300</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-400);"><span>400</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-500);"><span>500</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-600); color: white;"><span>600</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-700); color: white;"><span>700</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-800); color: white;"><span>800</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-900); color: white;"><span>900</span></div>
+                  <div class="color-swatch" style="background-color: var(--neutral-950); color: white;"><span>950</span></div>
+                </div>
+              </div>
+
+              <!-- Semantic Colors -->
+              <div class="color-group">
+                <h4>Cores Semânticas</h4>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <div>
+                    <h5 style="margin-bottom: 0.5rem; font-size: 0.875rem; color: var(--neutral-600);">Sucesso</h5>
+                    <div class="color-scales">
+                      <div class="color-swatch" style="background-color: var(--success-50); border: 1px solid var(--border);"><span>50</span></div>
+                      <div class="color-swatch" style="background-color: var(--success-100);"><span>100</span></div>
+                      <div class="color-swatch" style="background-color: var(--success-500); color: white;"><span>500</span></div>
+                      <div class="color-swatch" style="background-color: var(--success-600); color: white;"><span>600</span></div>
+                      <div class="color-swatch" style="background-color: var(--success-700); color: white;"><span>700</span></div>
+                    </div>
+                  </div>
+                  <div>
+                    <h5 style="margin-bottom: 0.5rem; font-size: 0.875rem; color: var(--neutral-600);">Erro</h5>
+                    <div class="color-scales">
+                      <div class="color-swatch" style="background-color: var(--error-50); border: 1px solid var(--border);"><span>50</span></div>
+                      <div class="color-swatch" style="background-color: var(--error-100);"><span>100</span></div>
+                      <div class="color-swatch" style="background-color: var(--error-500); color: white;"><span>500</span></div>
+                      <div class="color-swatch" style="background-color: var(--error-600); color: white;"><span>600</span></div>
+                      <div class="color-swatch" style="background-color: var(--error-700); color: white;"><span>700</span></div>
+                    </div>
+                  </div>
+                  <div>
+                    <h5 style="margin-bottom: 0.5rem; font-size: 0.875rem; color: var(--neutral-600);">Aviso</h5>
+                    <div class="color-scales">
+                      <div class="color-swatch" style="background-color: var(--warning-50); border: 1px solid var(--border);"><span>50</span></div>
+                      <div class="color-swatch" style="background-color: var(--warning-100);"><span>100</span></div>
+                      <div class="color-swatch" style="background-color: var(--warning-500); color: white;"><span>500</span></div>
+                      <div class="color-swatch" style="background-color: var(--warning-600); color: white;"><span>600</span></div>
+                      <div class="color-swatch" style="background-color: var(--warning-700); color: white;"><span>700</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Channel Colors -->
+              <div class="color-group">
+                <h4>Cores de Canais</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                  <div class="channel-color-item">
+                    <div class="channel-color" style="background-color: var(--channel-whatsapp);"></div>
+                    <p>WhatsApp</p>
+                  </div>
+                  <div class="channel-color-item">
+                    <div class="channel-color" style="background-color: var(--channel-messenger);"></div>
+                    <p>Messenger</p>
+                  </div>
+                  <div class="channel-color-item">
+                    <div class="channel-color" style="background-color: var(--channel-email);"></div>
+                    <p>Email</p>
+                  </div>
+                  <div class="channel-color-item">
+                    <div class="channel-color" style="background-color: var(--channel-instagram);"></div>
+                    <p>Instagram</p>
+                  </div>
+                  <div class="channel-color-item">
+                    <div class="channel-color" style="background-color: var(--channel-telegram);"></div>
+                    <p>Telegram</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Typography -->
+          <div class="showcase-subsection">
+            <h3>Tipografia</h3>
+            <div class="typography-grid">
+              <div class="typography-item">
+                <p class="font-interface text-xl">Rubik (Interface)</p>
+                <p style="color: var(--neutral-600); font-size: 0.875rem;">Títulos, labels, botões e mensagens</p>
+                <p style="font-family: var(--font-interface); font-weight: 400; margin-top: 0.5rem;">400 Regular</p>
+                <p style="font-family: var(--font-interface); font-weight: 500; margin-top: 0.5rem;">500 Medium</p>
+                <p style="font-family: var(--font-interface); font-weight: 600; margin-top: 0.5rem;">600 Semibold</p>
+                <p style="font-family: var(--font-interface); font-weight: 700; margin-top: 0.5rem;">700 Bold</p>
+              </div>
+              <div class="typography-item">
+                <p class="font-data text-xl">Inter (Dados)</p>
+                <p style="color: var(--neutral-600); font-size: 0.875rem;">Números, tabelas, IDs e timestamps</p>
+                <p style="font-family: var(--font-data); font-weight: 400; margin-top: 0.5rem;">400 Regular</p>
+                <p style="font-family: var(--font-data); font-weight: 500; margin-top: 0.5rem;">500 Medium</p>
+                <p style="font-family: var(--font-data); font-weight: 600; margin-top: 0.5rem;">600 Semibold</p>
+                <p style="font-family: var(--font-data); font-weight: 700; margin-top: 0.5rem;">700 Bold</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Border Radius -->
+          <div class="showcase-subsection">
+            <h3>Border Radius</h3>
+            <div class="border-radius-grid">
+              <div class="radius-item">
+                <div style="width: 100px; height: 100px; background-color: var(--primary); border-radius: var(--radius-sm);"></div>
+                <p>SM (6px)</p>
+              </div>
+              <div class="radius-item">
+                <div style="width: 100px; height: 100px; background-color: var(--primary); border-radius: var(--radius-md);"></div>
+                <p>MD (8px)</p>
+              </div>
+              <div class="radius-item">
+                <div style="width: 100px; height: 100px; background-color: var(--primary); border-radius: var(--radius-lg);"></div>
+                <p>LG (12px)</p>
+              </div>
+              <div class="radius-item">
+                <div style="width: 100px; height: 100px; background-color: var(--primary); border-radius: var(--radius-xl);"></div>
+                <p>XL (16px)</p>
+              </div>
+              <div class="radius-item">
+                <div style="width: 100px; height: 100px; background-color: var(--primary); border-radius: var(--radius-2xl);"></div>
+                <p>2XL (24px)</p>
+              </div>
+              <div class="radius-item">
+                <div style="width: 100px; height: 100px; background-color: var(--primary); border-radius: var(--radius-full);"></div>
+                <p>FULL (círculo)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== ATOMS SECTION ===== -->
+        <section id="atoms" class="showcase-section">
+          <h2>⚛️ Átomos</h2>
+
+          <!-- Channel Badge -->
+          <div class="showcase-subsection">
+            <h3>Channel Badge</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Indicador visual de canal de comunicação</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Tamanho SM</h5>
+                <div class="flex gap-md">
+                  <div class="channel-badge sm whatsapp" title="WhatsApp">W</div>
+                  <div class="channel-badge sm messenger" title="Messenger">M</div>
+                  <div class="channel-badge sm email" title="Email">E</div>
+                  <div class="channel-badge sm instagram" title="Instagram">I</div>
+                  <div class="channel-badge sm telegram" title="Telegram">T</div>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Tamanho MD</h5>
+                <div class="flex gap-md">
+                  <div class="channel-badge md whatsapp" title="WhatsApp">W</div>
+                  <div class="channel-badge md messenger" title="Messenger">M</div>
+                  <div class="channel-badge md email" title="Email">E</div>
+                  <div class="channel-badge md instagram" title="Instagram">I</div>
+                  <div class="channel-badge md telegram" title="Telegram">T</div>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Tamanho LG</h5>
+                <div class="flex gap-md">
+                  <div class="channel-badge lg whatsapp" title="WhatsApp">W</div>
+                  <div class="channel-badge lg messenger" title="Messenger">M</div>
+                  <div class="channel-badge lg email" title="Email">E</div>
+                  <div class="channel-badge lg instagram" title="Instagram">I</div>
+                  <div class="channel-badge lg telegram" title="Telegram">T</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLA Indicator -->
+          <div class="showcase-subsection">
+            <h3>SLA Indicator</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Indicador de status SLA com código de cores</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Safe (No prazo)</h5>
+                <div class="sla-indicator">
+                  <div class="sla-indicator-dot md safe"></div>
+                  <span class="sla-indicator-label">No prazo</span>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Warning (Próximo)</h5>
+                <div class="sla-indicator">
+                  <div class="sla-indicator-dot md warning"></div>
+                  <span class="sla-indicator-label">SLA Próximo</span>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Critical (Violado)</h5>
+                <div class="sla-indicator">
+                  <div class="sla-indicator-dot md critical"></div>
+                  <span class="sla-indicator-label">SLA Violado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Status Badge -->
+          <div class="showcase-subsection">
+            <h3>Status Badge</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Badge de status do ticket</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Tamanho MD</h5>
+                <div class="flex gap-md flex-wrap">
+                  <span class="status-badge open">Aberto</span>
+                  <span class="status-badge pending">Pendente</span>
+                  <span class="status-badge resolved">Resolvido</span>
+                  <span class="status-badge closed">Fechado</span>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Tamanho SM</h5>
+                <div class="flex gap-md flex-wrap">
+                  <span class="status-badge sm open">Aberto</span>
+                  <span class="status-badge sm pending">Pendente</span>
+                  <span class="status-badge sm resolved">Resolvido</span>
+                  <span class="status-badge sm closed">Fechado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Priority Badge -->
+          <div class="showcase-subsection">
+            <h3>Priority Badge</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Indicador de prioridade do ticket</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Prioridades</h5>
+                <div class="flex gap-md flex-wrap">
+                  <span class="priority-badge low">Baixa</span>
+                  <span class="priority-badge medium">Média</span>
+                  <span class="priority-badge high">Alta</span>
+                  <span class="priority-badge urgent">Urgente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avatar -->
+          <div class="showcase-subsection">
+            <h3>Avatar</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Avatar de usuário/agente</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Tamanho SM</h5>
+                <div class="flex gap-md">
+                  <div class="avatar sm">MA</div>
+                  <div class="avatar sm">JS</div>
+                  <div class="avatar sm">AC</div>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Tamanho MD</h5>
+                <div class="flex gap-md">
+                  <div class="avatar md">MA</div>
+                  <div class="avatar md">JS</div>
+                  <div class="avatar md">AC</div>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Tamanho LG</h5>
+                <div class="flex gap-md">
+                  <div class="avatar lg">MA</div>
+                  <div class="avatar lg">JS</div>
+                  <div class="avatar lg">AC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="showcase-subsection">
+            <h3>Tags</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Tags e labels</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Tags de Categoria</h5>
+                <div class="flex gap-sm flex-wrap">
+                  <div class="tag">Premium</div>
+                  <div class="tag">VIP</div>
+                  <div class="tag">Reclamação</div>
+                  <div class="tag">Sugestão</div>
+                  <div class="tag">Bug Report</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="showcase-subsection">
+            <h3>Buttons</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Variações de botões</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Primary</h5>
+                <div class="flex gap-md">
+                  <button class="btn-primary">Primário</button>
+                  <button class="btn-primary btn-small">Pequeno</button>
+                  <button class="btn-primary btn-large">Grande</button>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Secondary</h5>
+                <div class="flex gap-md">
+                  <button class="btn-secondary">Secundário</button>
+                  <button class="btn-secondary btn-small">Pequeno</button>
+                  <button class="btn-secondary btn-large">Grande</button>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Outline</h5>
+                <div class="flex gap-md">
+                  <button class="btn-outline">Outline</button>
+                  <button class="btn-outline btn-small">Pequeno</button>
+                  <button class="btn-outline btn-large">Grande</button>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Ghost</h5>
+                <div class="flex gap-md">
+                  <button class="btn-ghost">Ghost</button>
+                  <button class="btn-ghost btn-small">Pequeno</button>
+                  <button class="btn-ghost btn-large">Grande</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Input & Textarea -->
+          <div class="showcase-subsection">
+            <h3>Form Inputs</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Campos de entrada</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Text Input</h5>
+                <input type="text" placeholder="Digite algo..." />
+              </div>
+              <div class="component-card">
+                <h5>Textarea</h5>
+                <textarea placeholder="Escreva sua mensagem aqui..."></textarea>
+              </div>
+              <div class="component-card">
+                <h5>Select</h5>
+                <select>
+                  <option>Selecione uma opção</option>
+                  <option>WhatsApp</option>
+                  <option>Email</option>
+                  <option>Messenger</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== MOLECULES SECTION ===== -->
+        <section id="molecules" class="showcase-section">
+          <h2>🧬 Moléculas</h2>
+
+          <!-- SLA Progress Bar -->
+          <div class="showcase-subsection">
+            <h3>SLA Progress Bar</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Barra de progresso com mudança de cor dinâmica</p>
+            <div class="components-grid" style="max-width: 600px;">
+              <div class="component-card" style="width: 100%;">
+                <h5>Safe (0-50%)</h5>
+                <div class="sla-progress-bar">
+                  <div class="sla-progress-bar-header">
+                    <div class="sla-progress-bar-label">
+                      <span>🕐</span>
+                      <span>SLA</span>
+                    </div>
+                    <span class="sla-progress-bar-time safe">2h 15min</span>
+                  </div>
+                  <div class="sla-progress-track">
+                    <div class="sla-progress-fill safe" style="width: 35%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="component-card" style="width: 100%;">
+                <h5>Warning (51-80%)</h5>
+                <div class="sla-progress-bar">
+                  <div class="sla-progress-bar-header">
+                    <div class="sla-progress-bar-label">
+                      <span>🕐</span>
+                      <span>SLA</span>
+                    </div>
+                    <span class="sla-progress-bar-time warning">45min</span>
+                  </div>
+                  <div class="sla-progress-track">
+                    <div class="sla-progress-fill warning" style="width: 75%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="component-card" style="width: 100%;">
+                <h5>Critical (81-100%)</h5>
+                <div class="sla-progress-bar">
+                  <div class="sla-progress-bar-header">
+                    <div class="sla-progress-bar-label">
+                      <span>🕐</span>
+                      <span>SLA</span>
+                    </div>
+                    <span class="sla-progress-bar-time critical">10min</span>
+                  </div>
+                  <div class="sla-progress-track">
+                    <div class="sla-progress-fill critical" style="width: 95%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLA Progress Circular -->
+          <div class="showcase-subsection">
+            <h3>SLA Progress Circular</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Progresso circular para visualização compacta</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Safe</h5>
+                <div style="display: flex; justify-content: center;">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="sla-progress-circle-background"></circle>
+                    <circle cx="50" cy="50" r="45" class="sla-progress-circle-fill safe" style="stroke-dasharray: 282.7; stroke-dashoffset: 183.755; stroke-width: 8;"></circle>
+                  </svg>
+                  <div style="position: absolute; display: flex; align-items: center; justify-content: center; width: 100px; height: 100px;">35%</div>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Warning</h5>
+                <div style="display: flex; justify-content: center;">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="sla-progress-circle-background"></circle>
+                    <circle cx="50" cy="50" r="45" class="sla-progress-circle-fill warning" style="stroke-dasharray: 282.7; stroke-dashoffset: 70.675; stroke-width: 8;"></circle>
+                  </svg>
+                  <div style="position: absolute; display: flex; align-items: center; justify-content: center; width: 100px; height: 100px;">75%</div>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Critical</h5>
+                <div style="display: flex; justify-content: center;">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" class="sla-progress-circle-background"></circle>
+                    <circle cx="50" cy="50" r="45" class="sla-progress-circle-fill critical" style="stroke-dasharray: 282.7; stroke-dashoffset: 14.135; stroke-width: 8;"></circle>
+                  </svg>
+                  <div style="position: absolute; display: flex; align-items: center; justify-content: center; width: 100px; height: 100px;">95%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message Bubble -->
+          <div class="showcase-subsection">
+            <h3>Message Bubble</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Balão de mensagem com variações</p>
+            <div class="component-card" style="max-width: 600px;">
+              <h5>Mensagem Recebida</h5>
+              <div class="message-bubble received">
+                <div class="avatar sm" style="margin-top: 0.25rem;">MS</div>
+                <div class="message-bubble-content">
+                  <div class="message-bubble-header">
+                    <span class="message-bubble-sender">Maria Silva</span>
+                    <span class="message-bubble-timestamp">10:27</span>
+                  </div>
+                  <div class="message-bubble-body">
+                    Olá, preciso de ajuda com meu pedido #4521. Ele está atrasado.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-card" style="max-width: 600px; margin-top: 1rem;">
+              <h5>Mensagem Enviada</h5>
+              <div class="message-bubble sent">
+                <div class="avatar sm" style="margin-top: 0.25rem;">CM</div>
+                <div class="message-bubble-content">
+                  <div class="message-bubble-header">
+                    <span class="message-bubble-sender">Carlos Mendes</span>
+                    <span class="message-bubble-timestamp">10:29</span>
+                  </div>
+                  <div class="message-bubble-body">
+                    Entendo sua preocupação. Deixe-me verificar o status do seu pedido agora mesmo.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-card" style="max-width: 600px; margin-top: 1rem;">
+              <h5>Nota Interna</h5>
+              <div class="message-bubble internal">
+                <div class="avatar sm" style="margin-top: 0.25rem;">CM</div>
+                <div class="message-bubble-content">
+                  <div class="message-bubble-header">
+                    <span class="message-bubble-sender">Carlos Mendes</span>
+                    <span class="message-bubble-timestamp">10:28</span>
+                  </div>
+                  <div class="message-bubble-body">
+                    Cliente parece frustrado. Verificar histórico de pedidos anteriores.
+                  </div>
+                  <span class="message-bubble-internal-label">Nota Interna</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avatar Stack -->
+          <div class="showcase-subsection">
+            <h3>Avatar Stack</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Avatares empilhados</p>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Stack SM (até 3)</h5>
+                <div class="avatar-stack">
+                  <div class="avatar sm avatar-stack-item">MA</div>
+                  <div class="avatar sm avatar-stack-item">JS</div>
+                  <div class="avatar sm avatar-stack-item">AC</div>
+                  <div class="avatar-stack-counter sm">+2</div>
+                </div>
+              </div>
+              <div class="component-card">
+                <h5>Stack MD</h5>
+                <div class="avatar-stack">
+                  <div class="avatar md avatar-stack-item">MA</div>
+                  <div class="avatar md avatar-stack-item">JS</div>
+                  <div class="avatar md avatar-stack-item">AC</div>
+                  <div class="avatar-stack-counter md">+5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric Card -->
+          <div class="showcase-subsection">
+            <h3>Metric Card</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Card de KPI com tendência</p>
+            <div class="components-grid">
+              <div class="metric-card">
+                <div class="metric-card-header">
+                  <span class="metric-card-title">Tickets Abertos</span>
+                  <div class="metric-card-icon" style="color: var(--primary);">📊</div>
+                </div>
+                <div class="metric-card-value">42</div>
+                <div class="metric-card-trend up">
+                  <span>↑</span> <span>2.5% vs. ontem</span>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-card-header">
+                  <span class="metric-card-title">Tempo Médio</span>
+                  <div class="metric-card-icon" style="color: var(--success-500);">⏱️</div>
+                </div>
+                <div class="metric-card-value">4m 30s</div>
+                <div class="metric-card-trend down">
+                  <span>↓</span> <span>1.2% vs. ontem</span>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-card-header">
+                  <span class="metric-card-title">Satisfação</span>
+                  <div class="metric-card-icon" style="color: var(--warning-500);">😊</div>
+                </div>
+                <div class="metric-card-value">4.8/5</div>
+                <div class="metric-card-trend up">
+                  <span>↑</span> <span>0.3% vs. ontem</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Card -->
+          <div class="showcase-subsection">
+            <h3>Contact Card</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Card de contato/conversa</p>
+            <div class="components-grid" style="max-width: 350px;">
+              <div class="contact-card">
+                <div class="contact-card-header">
+                  <div class="contact-avatar">
+                    <div class="avatar md">MS</div>
+                    <div style="position: absolute; bottom: -2px; right: -2px;">
+                      <div class="channel-badge md whatsapp">W</div>
+                    </div>
+                  </div>
+                  <div class="contact-info">
+                    <div class="contact-name">Maria Silva</div>
+                    <div class="contact-message">Preciso de ajuda com meu pedido...</div>
+                  </div>
+                </div>
+                <div class="contact-meta">
+                  <span class="contact-time">10:30</span>
+                  <div>
+                    <span class="status-badge sm open">Aberto</span>
+                  </div>
+                </div>
+                <div class="sla-progress-bar">
+                  <div class="sla-progress-bar-header">
+                    <div class="sla-progress-bar-label">
+                      <span>🕐</span>
+                      <span>SLA</span>
+                    </div>
+                  </div>
+                  <div class="sla-progress-track">
+                    <div class="sla-progress-fill safe" style="width: 35%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== ORGANISMS SECTION ===== -->
+        <section id="organisms" class="showcase-section">
+          <h2>🧬 Organismos</h2>
+          <p style="color: var(--neutral-600); margin-bottom: 2rem;">Componentes complexos e completos</p>
+
+          <!-- Ticket Grid Preview -->
+          <div class="showcase-subsection">
+            <h3>Ticket Data Grid</h3>
+            <p style="color: var(--neutral-600); margin-bottom: 1rem;">Tabela avançada com filtros, busca e paginação</p>
+            
+            <div class="ticket-grid">
+              <div class="ticket-grid-header">
+                <div class="ticket-grid-filters">
+                  <div class="ticket-grid-search" style="flex: 1;">
+                    <div class="search-input-wrapper">
+                      <span class="search-input-icon">🔍</span>
+                      <input type="text" class="search-input" placeholder="Buscar tickets...">
+                    </div>
+                  </div>
+                  <select style="width: 150px;">
+                    <option>Todos Status</option>
+                    <option>Aberto</option>
+                    <option>Pendente</option>
+                    <option>Resolvido</option>
+                  </select>
+                  <select style="width: 150px;">
+                    <option>Todos Canais</option>
+                    <option>WhatsApp</option>
+                    <option>Email</option>
+                    <option>Messenger</option>
+                  </select>
+                  <button class="btn-outline" style="width: auto; padding: 0.5rem 0.75rem;">
+                    🔧
+                  </button>
+                </div>
+                <div class="ticket-grid-meta">
+                  <p>12 tickets encontrados</p>
+                </div>
+              </div>
+
+              <div style="overflow-x: auto;">
+                <table class="ticket-grid-table">
+                  <thead class="ticket-grid-thead">
+                    <tr>
+                      <th style="width: 80px;">
+                        <button class="ticket-grid-sort-btn">
+                          ID
+                          <span class="ticket-grid-sort-icon">↕️</span>
+                        </button>
+                      </th>
+                      <th style="width: 150px;">
+                        <button class="ticket-grid-sort-btn">
+                          CLIENTE
+                          <span class="ticket-grid-sort-icon">↕️</span>
+                        </button>
+                      </th>
+                      <th>ASSUNTO</th>
+                      <th style="width: 100px;">CANAL</th>
+                      <th style="width: 100px;">STATUS</th>
+                      <th style="width: 100px;">PRIORIDADE</th>
+                      <th style="width: 80px;">SLA</th>
+                      <th style="width: 120px;">AGENTES</th>
+                    </tr>
+                  </thead>
+                  <tbody class="ticket-grid-tbody">
+                    <tr>
+                      <td><span class="ticket-grid-id">#1234</span></td>
+                      <td><span class="ticket-grid-customer">Maria Silva</span></td>
+                      <td><span class="ticket-grid-subject">Pedido atrasado #4521</span></td>
+                      <td><div class="channel-badge md whatsapp">W</div></td>
+                      <td><span class="status-badge open">Aberto</span></td>
+                      <td><span class="priority-badge high">Alta</span></td>
+                      <td><div class="sla-indicator"><div class="sla-indicator-dot md safe"></div></div></td>
+                      <td>
+                        <div class="avatar-stack">
+                          <div class="avatar sm avatar-stack-item">CM</div>
+                          <div class="avatar sm avatar-stack-item">JS</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="ticket-grid-id">#1235</span></td>
+                      <td><span class="ticket-grid-customer">João Santos</span></td>
+                      <td><span class="ticket-grid-subject">Quando vai chegar minha encomenda?</span></td>
+                      <td><div class="channel-badge md email">E</div></td>
+                      <td><span class="status-badge pending">Pendente</span></td>
+                      <td><span class="priority-badge medium">Média</span></td>
+                      <td><div class="sla-indicator"><div class="sla-indicator-dot md warning"></div></div></td>
+                      <td>
+                        <div class="avatar-stack">
+                          <div class="avatar sm avatar-stack-item">AC</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="ticket-grid-id">#1236</span></td>
+                      <td><span class="ticket-grid-customer">Ana Costa</span></td>
+                      <td><span class="ticket-grid-subject">Obrigada pelo atendimento!</span></td>
+                      <td><div class="channel-badge md messenger">M</div></td>
+                      <td><span class="status-badge resolved">Resolvido</span></td>
+                      <td><span class="priority-badge low">Baixa</span></td>
+                      <td><div class="sla-indicator"><div class="sla-indicator-dot md safe"></div></div></td>
+                      <td>
+                        <div class="avatar-stack">
+                          <div class="avatar sm avatar-stack-item">CM</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="ticket-grid-pagination">
+                <span class="ticket-grid-pagination-info">Mostrando 1-3 de 12</span>
+                <div class="ticket-grid-pagination-controls">
+                  <button class="ticket-grid-pagination-btn">←</button>
+                  <span>Página 1</span>
+                  <button class="ticket-grid-pagination-btn">→</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Empty States -->
+          <div class="showcase-subsection">
+            <h3>Empty States</h3>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Sem Tickets</h5>
+                <div class="empty-state">
+                  <div class="empty-state-icon">📭</div>
+                  <h4 class="empty-state-title">Fila Vazia</h4>
+                  <p class="empty-state-description">Parabéns! Todos os tickets foram resolvidos.</p>
+                  <button class="btn-primary">Voltar ao Dashboard</button>
+                </div>
+              </div>
+
+              <div class="component-card">
+                <h5>Sem Resultados</h5>
+                <div class="empty-state">
+                  <div class="empty-state-icon">🔍</div>
+                  <h4 class="empty-state-title">Nenhum Resultado</h4>
+                  <p class="empty-state-description">Sua busca não retornou resultados. Tente outro termo.</p>
+                  <button class="btn-outline">Limpar Busca</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skeleton Loaders -->
+          <div class="showcase-subsection">
+            <h3>Skeleton Loaders</h3>
+            <div class="components-grid">
+              <div class="component-card">
+                <h5>Carregando Chat</h5>
+                <div class="skeleton-chat-message">
+                  <div class="skeleton skeleton-avatar"></div>
+                  <div style="flex: 1;">
+                    <div class="skeleton skeleton-text" style="width: 30%; margin-bottom: 0.5rem;"></div>
+                    <div class="skeleton skeleton-text" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <div class="skeleton-chat-message">
+                  <div class="skeleton skeleton-avatar"></div>
+                  <div style="flex: 1;">
+                    <div class="skeleton skeleton-text" style="width: 40%; margin-bottom: 0.5rem;"></div>
+                    <div class="skeleton skeleton-text"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="component-card">
+                <h5>Carregando Tabela</h5>
+                <div class="skeleton-table-row">
+                  <div class="skeleton-table-col">
+                    <div class="skeleton skeleton-text"></div>
+                  </div>
+                  <div class="skeleton-table-col">
+                    <div class="skeleton skeleton-text"></div>
+                  </div>
+                  <div class="skeleton-table-col">
+                    <div class="skeleton skeleton-text"></div>
+                  </div>
+                </div>
+                <div class="skeleton-table-row">
+                  <div class="skeleton-table-col">
+                    <div class="skeleton skeleton-text"></div>
+                  </div>
+                  <div class="skeleton-table-col">
+                    <div class="skeleton skeleton-text"></div>
+                  </div>
+                  <div class="skeleton-table-col">
+                    <div class="skeleton skeleton-text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="showcase-footer">
+      <div class="container">
+        <p>&copy; 2024 Design System - Plataforma Omnichannel CRM. Versão 1.0.0</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/showcase.js"></script>
+</body>
+</html>

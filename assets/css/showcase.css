@@ -1,0 +1,330 @@
+/* ============================================
+   SHOWCASE - Página de Demonstração
+   ============================================ */
+
+/* ---- NAVIGATION ---- */
+
+.showcase-nav {
+  background-color: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.showcase-nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-2xl);
+}
+
+.showcase-nav-logo {
+  flex-shrink: 0;
+}
+
+.showcase-nav-logo h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--primary);
+}
+
+.showcase-nav-logo p {
+  font-size: 0.75rem;
+  color: var(--neutral-600);
+  margin: 0;
+}
+
+.showcase-nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-2xl);
+  margin: 0;
+  padding: 0;
+}
+
+.showcase-nav-menu a {
+  color: var(--neutral-600);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color var(--transition-base);
+  font-family: var(--font-interface);
+}
+
+.showcase-nav-menu a:hover {
+  color: var(--primary);
+}
+
+/* ---- MAIN CONTENT ---- */
+
+.design-system-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-main {
+  flex: 1;
+  padding-top: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+  background-color: var(--neutral-50);
+}
+
+/* ---- SECTION STYLES ---- */
+
+.showcase-section {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.showcase-section > h2 {
+  font-size: 1.75rem;
+  color: var(--neutral-900);
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--primary);
+}
+
+.showcase-subsection {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.showcase-subsection > h3 {
+  font-size: 1.25rem;
+  color: var(--neutral-900);
+  margin-bottom: var(--spacing-lg);
+}
+
+.showcase-subsection > p {
+  color: var(--neutral-600);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ---- COLORS SECTION ---- */
+
+.colors-grid {
+  display: grid;
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.color-group h4 {
+  font-size: 1rem;
+  color: var(--neutral-900);
+  margin-bottom: var(--spacing-lg);
+}
+
+.color-scales {
+  display: flex;
+  gap: var(--spacing-xs);
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.color-swatch {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--spacing-xs);
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--neutral-600);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.color-swatch:hover {
+  transform: scale(1.05);
+}
+
+.channel-color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.channel-color {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.channel-color-item p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--neutral-900);
+  margin: 0;
+}
+
+/* ---- TYPOGRAPHY SECTION ---- */
+
+.typography-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.typography-item {
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.typography-item p:first-child {
+  margin-bottom: var(--spacing-md);
+}
+
+/* ---- BORDER RADIUS SECTION ---- */
+
+.border-radius-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.radius-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.radius-item p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--neutral-700);
+  margin: 0;
+}
+
+/* ---- COMPONENTS GRID ---- */
+
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.component-card {
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.component-card h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--neutral-700);
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.component-card > * + * {
+  margin-top: var(--spacing-lg);
+}
+
+/* ---- FOOTER ---- */
+
+.showcase-footer {
+  background-color: var(--neutral-900);
+  color: white;
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.showcase-footer p {
+  font-family: var(--font-data);
+  font-size: 0.875rem;
+  margin: 0;
+  color: var(--neutral-400);
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+  .showcase-nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+  }
+
+  .showcase-nav-menu {
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+  }
+
+  .showcase-main {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .showcase-section > h2 {
+    font-size: 1.5rem;
+  }
+
+  .showcase-subsection > h3 {
+    font-size: 1.125rem;
+  }
+
+  .components-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .color-scales {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .color-swatch {
+    aspect-ratio: auto;
+    height: 40px;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .showcase-nav {
+    position: static;
+  }
+
+  .component-card {
+    page-break-inside: avoid;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .showcase-main {
+    background-color: white;
+  }
+}
