@@ -81,42 +81,42 @@ Design System Omnichannel CRM - Web/
 
 ### **Cores**
 
-#### Primária
+#### Primária (produção)
 ```css
---primary-50:   #f5f0ff  (muito claro)
---primary-100:  #ede5ff
---primary-200:  #dccfff
---primary-300:  #c1a8ff
---primary-400:  #a37aff
---primary-500:  #8547ff
---primary-600:  #700AFF  ← PRINCIPAL
---primary-700:  #6100e8
---primary-800:  #5100c2
---primary-900:  #43009e
---primary-950:  #29006b  (muito escuro)
+--primary-50:   #fdf7ff  (muito claro)
+--primary-100:  #f8f0ff
+--primary-200:  #eedcff
+--primary-300:  #d9bfff
+--primary-400:  #b67ef5
+--primary-500:  #a933dc
+--primary-600:  #9400d3  ← PRINCIPAL
+--primary-700:  #7a00a9
+--primary-800:  #5c007f
+--primary-900:  #3f005c
+--primary-950:  #2b003f  (muito escuro)
 ```
 
-#### Neutra (Slate)
+#### Neutra
 ```css
---neutral-50:   #f8fafc  (muito claro)
---neutral-100:  #f1f5f9
---neutral-200:  #e2e8f0
---neutral-300:  #cbd5e1
---neutral-400:  #94a3b8
---neutral-500:  #64748b
---neutral-600:  #475569
---neutral-700:  #334155
---neutral-800:  #1e293b
---neutral-900:  #0f172a
---neutral-950:  #020617  (muito escuro)
+--neutral-50:   #fafafa  (muito claro)
+--neutral-100:  #f5f5f5
+--neutral-200:  #e9e9e9
+--neutral-300:  #d2d2d2
+--neutral-400:  #8e8e8e
+--neutral-500:  #565656
+--neutral-600:  #3a3a3a
+--neutral-700:  #2b2b2b
+--neutral-800:  #1e1e1e
+--neutral-900:  #0f0f0f
+--neutral-950:  #060606  (muito escuro)
 ```
 
 #### Semânticas
 ```css
---success-500:  #22c55e  (Verde)
---error-500:    #ef4444  (Vermelho)
---warning-500:  #eab308  (Amarelo)
---info-500:     #3b82f6  (Azul)
+--success-500:  #06c270  (Verde)
+--error-500:    #ff3b3b  (Vermelho)
+--warning-500:  #ffce3a  (Amarelo)
+--info-500:     #29bdff  (Azul)
 ```
 
 #### Canais de Comunicação
@@ -641,5 +641,3 @@ Desenvolvido com ❤️ para a plataforma Omnichannel CRM.
 **Versão:** 1.0.0  
 **Data:** Dezembro 2024  
 **Status:** ✅ Pronto para Produção
-#   t e s t e - a l g o  
- 
