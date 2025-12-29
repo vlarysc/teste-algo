@@ -10,7 +10,7 @@
   --font-size: 16px;
 
   /* ============== THEME COLORS (Simplified) ============== */
-  --header-color: #3D1B6F;
+  /* Primary color and variations */
   --primary-color: #3D1B6F;
   --primary-color-darken: #2f1556;
   --primary-color-lighten: #4b2188;
@@ -21,7 +21,20 @@
   --header-fg-color: #ffffff;
   --header-alert-color: #FF3C78;
 
-  /* Primary scale */
+  /* Primary scale (mapped to simplified palette) */
+  --primary-50: #c3a9ea;
+  --primary-100: #996cdb;
+  --primary-200: #793ed0;
+  --primary-300: #5827a0;
+  --primary-400: #4b2188;
+  --primary-500: #3d1b6f;
+  --primary-600: #2f1556;
+  --primary-700: #220f3e;
+  --primary-800: #140925;
+  --primary-900: #07030d;
+  --primary-950: #07030d;
+
+  /* Theme primary with contrast (for Material-style components) */
   --theme-primary-50: #c3a9ea;
   --theme-primary-contrast-50: rgba(0, 0, 0, 0.87);
   --theme-primary-100: #996cdb;
@@ -51,7 +64,7 @@
   --theme-primary-A700: #471c88;
   --theme-primary-contrast-A700: white;
 
-  /* Accent scale */
+  /* Accent scale (mapped to simplified palette) */
   --theme-accent-50: #ffffff;
   --theme-accent-contrast-50: rgba(0, 0, 0, 0.87);
   --theme-accent-100: #ffffff;
@@ -80,20 +93,6 @@
   --theme-accent-contrast-A400: rgba(0, 0, 0, 0.87);
   --theme-accent-A700: #fbf9f9;
   --theme-accent-contrast-A700: rgba(0, 0, 0, 0.87);
-
-  /* ============== PRIMARY COLOR SCALE ============== */
-  /* Base spotted in produção: #9400d3 (Purple) */
-  --primary-50: #fdf7ff;
-  --primary-100: #f8f0ff;
-  --primary-200: #eedcff;
-  --primary-300: #d9bfff;
-  --primary-400: #b67ef5;
-  --primary-500: #a933dc;
-  --primary-600: #9400d3;
-  --primary-700: #7a00a9;
-  --primary-800: #5c007f;
-  --primary-900: #3f005c;
-  --primary-950: #2b003f;
 
   /* ============== NEUTRAL COLOR SCALE ============== */
   /* Cinzas do produto: tons quentes usados em labels/badges */
